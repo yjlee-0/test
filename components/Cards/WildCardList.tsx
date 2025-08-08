@@ -8,7 +8,6 @@ interface Card {
 	imagesrc: string;
 }
 
-
 const WildCardListComponent = () => {
 	let cards: Card[] = [
 		{ badge: "해외여행", title: "나고야", hashtag: "#토롯코열차탑승 #시라카와고합장촌 #특식포함 #시원한피서지 #단풍의정수", price: "1,149,000", imagesrc: "https://img.modetour.com/eagle/photoimg/24275/rfile/638114625057422828.jpg" },

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import CardListComponent from "../../components/Cards/CardList";
 import WildCardListComponent from "../../components/Cards/WildCardList";
+
 const Home = () => {
 	return (
 		<div>
