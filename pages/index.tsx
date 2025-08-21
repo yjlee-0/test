@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import HomeFeatures from '../features/Home/Home'
+import HomeFeatures from '../features/Home/Index'
 
 const Home: NextPage = () => {
   return (
