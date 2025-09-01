@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
 type User = {
-  id: string;
-  accessToken: string;
+  id?: string | '';
+  accessToken?: string | undefined;
   username: string;
 };
 
@@ -14,7 +14,6 @@ type Props = {
 const Login = ({ user, setUser }: Props) => {
   const [inputUserId, setInputUserId] = useState('');
   const [inputUserPwd, setInputUserPwd] = useState('');
-
 
   const chkLogin = (userId: string, userPwd: string) => {
     if (!userId || !userPwd) return setUser({ ...user, id: '', accessToken: '', username: '입력 필요' });
@@ -38,11 +37,11 @@ const Login = ({ user, setUser }: Props) => {
           로그인
         </button>
       </div>
-      <div className="pt-[40px]">
+      {!!user && (<div className="pt-[40px]">
         <p>id : {user.id}</p>
         <p>accessToken : {user.accessToken}</p>
         <p>username : {user.username}</p>
-      </div>
+      </div>)}
     </>
   )
 }

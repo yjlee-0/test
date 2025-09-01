@@ -3,7 +3,7 @@ import React, { createContext, useState } from 'react';
 export interface UserContextValues {
   user: {
     id: string;
-    accessToken: string;
+    accessToken?: string;
     username: string;
   };
 }
@@ -18,7 +18,7 @@ const contextDefaultValues: UserContextValues = {
 
 const UserContext = createContext(contextDefaultValues);
 
-export const useUser = () => React.useContext(UserContext);
+export const setUser = () => React.useContext(UserContext);
 
 const UserProvider = ({ children }: any) => {
   const [user] = useState(contextDefaultValues.user);
