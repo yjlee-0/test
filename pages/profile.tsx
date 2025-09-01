@@ -2,13 +2,13 @@ import { GetStaticProps } from "next";
 
 interface ProfileInfoProps {
   user: {
-    name?: any;
+    name: string;
   };
 }
 
 export default function ProfileInfo({ user }: ProfileInfoProps) {
   return (
-    <div>api 결과값 노출 : {user.name}</div>
+    <div>user.name : {user.name}</div>
   )
 }
 

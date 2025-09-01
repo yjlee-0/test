@@ -17,6 +17,9 @@ const Header = () => {
 					<li className="me-2" onClick={() => router.push('/mypage')}>
 						mypage
 					</li>
+					<li className="me-2" onClick={() => router.push('/profile')}>
+						api sample
+					</li>
 				</ul>
 			</div>
 		</header>
