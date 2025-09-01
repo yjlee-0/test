@@ -17,8 +17,11 @@ const Header = () => {
 					<li className="me-2" onClick={() => router.push('/mypage')}>
 						mypage
 					</li>
-					<li className="me-2" onClick={() => router.push('/profile')}>
-						api sample
+					<li className="me-2" onClick={() => router.push('/staticsample')}>
+						getStaticProps sample
+					</li>
+					<li className="me-2" onClick={() => router.push('/serversidesample')}>
+						getServerSideProps sample
 					</li>
 				</ul>
 			</div>
